@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CMD</class>
+ <widget class="QWidget" name="CMD">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>895</width>
+    <height>726</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1,0">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;Lucida Console&quot;;</string>
+     </property>
+     <property name="title">
+      <string>CMD</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMinAndMaxSize</enum>
+      </property>
+      <item>
+       <widget class="QTextBrowser" name="text_browser_cmd"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bt_clear">
+        <property name="text">
+         <string>clear</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;Lucida Console&quot;;</string>
+     </property>
+     <property name="title">
+      <string>Command</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="bt_back">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Lucida Console&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bt_version">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Lucida Console&quot;;</string>
+        </property>
+        <property name="text">
+         <string>version</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Lucida Console&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Command-List</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="styleSheet">
+      <string notr="true">font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="title">
+      <string>Serial</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="3" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QCheckBox" name="checkBox_hex_send">
+          <property name="text">
+           <string>Hex Send</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_hex_receive">
+          <property name="text">
+           <string>Hex Receive</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="bt_send_to_com">
+        <property name="text">
+         <string>Send</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_Serial">
+        <item>
+         <widget class="QGroupBox" name="formGroupBox">
+          <property name="styleSheet">
+           <string notr="true">font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+          </property>
+          <property name="title">
+           <string>串口设置</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout">
+           <property name="horizontalSpacing">
+            <number>10</number>
+           </property>
+           <property name="verticalSpacing">
+            <number>10</number>
+           </property>
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_com_check">
+             <property name="styleSheet">
+              <string notr="true">font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+             </property>
+             <property name="text">
+              <string>串口检测：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="bt_com_detect">
+             <property name="styleSheet">
+              <string notr="true">font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+             </property>
+             <property name="text">
+              <string>检测串口</string>
+             </property>
+             <property name="autoRepeatInterval">
+              <number>100</number>
+             </property>
+             <property name="default">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_com_select">
+             <property name="styleSheet">
+              <string notr="true">font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+             </property>
+             <property name="text">
+              <string>串口选择：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comBox_com_select"/>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QLabel" name="state_label">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::AutoText</enum>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_boud_rate">
+             <property name="styleSheet">
+              <string notr="true">font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+             </property>
+             <property name="text">
+              <string>波特率：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QComboBox" name="comBox_boud_rate">
+             <item>
+              <property name="text">
+               <string>115200</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2400</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4800</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>9600</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14400</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>19200</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>38400</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>57600</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>76800</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12800</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>230400</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>460800</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_data_bit">
+             <property name="styleSheet">
+              <string notr="true">font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+             </property>
+             <property name="text">
+              <string>数据位：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QComboBox" name="comBox_data_bit">
+             <item>
+              <property name="text">
+               <string>8</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>7</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>6</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_crc_check">
+             <property name="styleSheet">
+              <string notr="true">font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+             </property>
+             <property name="text">
+              <string>校验位：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QComboBox" name="comBox_crc_check">
+             <item>
+              <property name="text">
+               <string>N</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_stop_bit">
+             <property name="styleSheet">
+              <string notr="true">font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+             </property>
+             <property name="text">
+              <string>停止位：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QComboBox" name="com_box_stop_bit">
+             <item>
+              <property name="text">
+               <string>1</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="7" column="0" colspan="2">
+            <widget class="QPushButton" name="bt_open_com">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+    border:1px solid black;
+    height:20px;
+    border-radius:6px;
+    font-family:'Microsoft YaHei';
+    font-size:14px;
+	color:black;
+    background-color:#e1e1e1
+    }
+
+ QPushButton:hover{
+     background-color:#eef0f6;
+ }
+ 
+ QPushButton:pressed{
+     background-color:#ffffff;
+     }
+</string>
+             </property>
+             <property name="text">
+              <string>打开串口</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0" colspan="2">
+            <widget class="QPushButton" name="bt_close_com">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+    border:1px solid black;
+    height:20px;
+    border-radius:6px;
+    font-family:'Microsoft YaHei';
+    font-size:14px;
+	color:black;
+    background-color:#e1e1e1
+    }
+
+ QPushButton:hover{
+     background-color:#eef0f6;
+ }
+ 
+ QPushButton:pressed{
+     background-color:#ffffff;
+     }
+</string>
+             </property>
+             <property name="text">
+              <string>关闭串口</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="formGroupBox_Serial">
+          <property name="styleSheet">
+           <string notr="true">font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+          </property>
+          <property name="title">
+           <string>串口状态</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout_2">
+           <property name="horizontalSpacing">
+            <number>10</number>
+           </property>
+           <property name="verticalSpacing">
+            <number>10</number>
+           </property>
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_have_received">
+             <property name="styleSheet">
+              <string notr="true">font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+             </property>
+             <property name="text">
+              <string>已接收：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_have_received"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_have_tx">
+             <property name="styleSheet">
+              <string notr="true">font: 75 10pt &quot;Microsoft YaHei UI&quot;;</string>
+             </property>
+             <property name="text">
+              <string>已发送：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_have_tx"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <widget class="QTextEdit" name="textEdit_send_region"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QTextBrowser" name="textBrowser_receive_region"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>bt_clear</sender>
+   <signal>clicked()</signal>
+   <receiver>text_browser_cmd</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>150</x>
+     <y>691</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>150</x>
+     <y>356</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

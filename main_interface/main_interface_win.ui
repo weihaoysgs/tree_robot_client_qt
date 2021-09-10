@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainInterFace</class>
+ <widget class="QWidget" name="MainInterFace">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>526</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Lucida Console&quot;;</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="bt_img_tx">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Lucida Console&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Img Tx</string>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bt_serial">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;hello&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Lucida Console&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Serial</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bt_cmd">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Lucida Console&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Cmd</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bt_gimbal">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Lucida Console&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Gimbal</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
