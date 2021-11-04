@@ -14,13 +14,13 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_CommonSerial(object):
     def setupUi(self, CommonSerial):
         CommonSerial.setObjectName("CommonSerial")
-        CommonSerial.resize(803, 765)
+        CommonSerial.resize(803, 804)
         self.bt_back = QtWidgets.QPushButton(CommonSerial)
         self.bt_back.setGeometry(QtCore.QRect(0, 0, 93, 28))
         self.bt_back.setStyleSheet("font: 9pt \"Lucida Console\";")
         self.bt_back.setObjectName("bt_back")
         self.groupBox = QtWidgets.QGroupBox(CommonSerial)
-        self.groupBox.setGeometry(QtCore.QRect(540, 20, 251, 691))
+        self.groupBox.setGeometry(QtCore.QRect(540, 10, 251, 781))
         self.groupBox.setStyleSheet("font: 75 10pt \"Microsoft YaHei UI\";")
         self.groupBox.setObjectName("groupBox")
         self.gridLayout = QtWidgets.QGridLayout(self.groupBox)
